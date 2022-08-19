@@ -1,13 +1,14 @@
-dikiSearch = function(info, tab) {
+searchEtymonline = function(info, tab) {
+  console.log(tab);
   var query = info.selectionText;
   chrome.tabs.create({
-    url: "https://www.diki.pl/slownik-angielskiego?q=" + query + "&source=opensearch"
+    url: `https://www.etymonline.com/word/${query}`
   });
 }
 
 chrome.contextMenus.create({
-  "id": "diki.pl",
-  "title": "Search in Diki.pl",
+  "id": "etym",
+  "title": "Search Etymonline",
   "contexts": ["selection"],
-  "onclick": dikiSearch
+  "onclick": searchEtymonline
 });

@@ -4,12 +4,12 @@
   },
   "permissions": ["contextMenus"],
   "manifest_version": 2,
-  "version": "0.3",
-  "name": "Diki",  
-  "description": "Multimedialny słownik angielskiego online",
-  "author": "Piotr Sobieszczański",
+  "version": "1.0.0",
+  "name": "Etymonline lookup",
+  "description": "Search Etymonline from the context menu",
+  "author": "Piotr Sobieszczański, Ryan Semmler",
   "icons": {
-    "16": "diki-small.png",
-    "64": "diki-medium.png"
+    "16": "OE16.png",
+    "60": "OE60.png"
   }
 }
