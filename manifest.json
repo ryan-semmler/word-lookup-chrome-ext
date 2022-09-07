@@ -1,15 +1,15 @@
 {
   "background": {
-    "scripts": ["main.js"]
+    "service_worker": "main.js"
   },
   "permissions": ["contextMenus"],
-  "manifest_version": 2,
-  "version": "1.0.0",
+  "manifest_version": 3,
+  "version": "0.0.1",
   "name": "Etymonline lookup",
-  "description": "Search Etymonline from the context menu",
+  "description": "Search a highlighted word on Etymonline from the context menu",
   "author": "Piotr Sobieszczański, Ryan Semmler",
   "icons": {
-    "16": "OE16.png",
-    "60": "OE60.png"
+    "16": "images/OE16.png",
+    "60": "images/OE60.png"
   }
 }

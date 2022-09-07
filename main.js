@@ -1,5 +1,4 @@
-searchEtymonline = function(info, tab) {
-  console.log(tab);
+searchEtymonline = function(info) {
   var query = info.selectionText;
   chrome.tabs.create({
     url: `https://www.etymonline.com/word/${query}`
@@ -9,6 +8,9 @@ searchEtymonline = function(info, tab) {
 chrome.contextMenus.create({
   "id": "etym",
   "title": "Search Etymonline",
-  "contexts": ["selection"],
-  "onclick": searchEtymonline
+  "contexts": ["selection"]
 });
+
+chrome.contextMenus.onClicked.addListener(
+  searchEtymonline
+)
